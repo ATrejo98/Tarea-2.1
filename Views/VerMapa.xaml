@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             xmlns:sensors="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials"
+             xmlns:converters="clr-namespace:Ejercicio2_1.Converters"
+             x:Class="Ejercicio2_1.Views.VerMapa"
+             Title="VerMapa">
+    
+    <ContentPage.Resources>
+        <converters:ImageSvgToImageSource x:Key="SvgToImageValid"  />
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <maps:Map x:Name="mapa"/>
+    </StackLayout>
+</ContentPage>
